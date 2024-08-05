@@ -1,0 +1,59 @@
+/* 
+=============================
+SHARED CSS
+=============================
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+}
+
+/* 
+=============================
+OUTER GRID STYLES
+=============================
+*/
+
+.outer-grid {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 90px 1fr;
+    grid-template-areas: 
+    "header-alias header-alias"
+    "inner-grid-alias inner-grid-alias";
+}
+
+.outer-grid-expanded {
+    grid-template-areas: 
+    "header-alias header-alias"
+    "nav-alias inner-grid-alias";
+}
+
+/* .hide-nav {
+    display: none;
+} */
+
+header {
+    grid-area: header-alias;
+    background-color: rgba(0, 31, 255, 0.5);
+}
+
+nav {
+    grid-area: nav-alias;
+    background-color: rgba(0, 31, 255, 0.8);
+
+}
+
+.inner-grid {
+    grid-area: inner-grid-alias;
+    background-color: rgba(0, 31, 255, 0.2);
+}
