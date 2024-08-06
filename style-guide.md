@@ -1,3 +1,5 @@
+## This was the style guide provided by Zach to meet the desired specifications of this project.
+
 See [this link](https://zachgoll.github.io/holy-grail-css-layout/) for the completed project.  I recommend keeping this open so you can look at the visual design as you build.
 
 ## Colors
